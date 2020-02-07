@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* @font-face {
    src: url('../fonts/OpenSans-Regular.ttf');
    font-family: "OpenSans Regular";
@@ -120,4 +121,128 @@ body {
     margin-bottom: 20px;
     text-align: center;
     /* justify-content: center; */
+=======
+/* @font-face {
+   src: url('../fonts/OpenSans-Regular.ttf');
+   font-family: "OpenSans Regular";
+} */
+
+/* @font-face {
+   src: url('../fonts/OpenSans-Italic.ttf');
+   font-family: "OpenSans Italic";
+} */
+
+/* @font-face {
+   src: url('../fonts/OpenSans-Bold.ttf');
+   font-family: "OpenSans Bold";
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans Regular", Arial, Arial, Helvetica, sans-serif;
+    background-color: burlywood;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 20px 20px;
+}
+
+.navigation a {
+    color: darkred;
+    margin-right: 30px;
+}
+
+.navigation a:hover {
+    color: gray;
+    transition: .5s;
+}
+
+.navigation a:visited {
+   color: blue;
+}
+
+.student-name {
+    color: gray;
+    text-align: center;
+}
+
+.photo {
+    display: block;
+    position: relative;
+    text-align: center;
+    background-color: lightslategray;
+    margin: 0 15px;
+    padding: 15px 0;
+    /* justify-content: space-around; */
+ }
+
+ .photo img {
+    border: 1px solid white;
+    border-radius: 2%;
+ }
+
+ .main {
+     display: block;
+     margin: 0 15px;
+}
+
+ .main h2 {
+    display: block;
+    padding: 0 30px;
+    border-left: 5px solid darkorange;
+    color: gray;
+ }
+
+ main ul {
+    margin-bottom: 30px;
+ }
+
+ .main p {
+    margin-bottom: 30px;
+ }
+
+ .contacts {
+    display: block;
+    padding: 20px 0;
+    border-top: 1px solid black;
+    margin: 0 15px;
+ }
+
+ .contacts h2 {
+    display: block;
+    border-left: 5px solid darkorange;
+    padding: 0 40px;
+    color: gray;
+    
+}
+ 
+.contacts p {
+   /* display: block; */
+   /* width: 230px;  */
+   display: flex;
+   justify-content: right;
+ }
+
+ footer a {
+    color: darkred;
+ }
+
+ footer a:hover {
+    color: gray;
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+ }
+
+ .copyright {
+    display: inline;
+    margin-bottom: 20px;
+    text-align: center;
+    /* justify-content: center; */
+>>>>>>> 095eedf4d5ba76fc5b242e8a815d9331a0341935
  }
