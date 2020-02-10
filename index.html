@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Моя визитная карточка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=cyrillic"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=cyrillic" -->
+    <!-- rel="stylesheet"> -->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
 
     <header>
-        <!-- Башка сайта -->
         <div class="navigation">
             <nav>
                 <a href="#about">Обо мне</a>
@@ -22,68 +21,79 @@
                 <a href="#contacts">Контакты</a>
             </nav>
         </div>
-        <h1 class="student-name">Дмитрий Духовлинов, студент курса "Фронт-энд разработчик"</h1>
-        <div class="photo">
-            <img src="img/IMG_1645.JPG" alt="Моё фото" width="350">
-        </div>
+        <hr>
     </header>
 
     <main class="main">
-        <div class="about" id="about">
-            <h2>Обо мне</h2>
-            <p>Живу в Москве, профессионально занимаюсь <span>бухгалтерией и финансами</span></p>
-        </div>
-        <div class="education" id="education">
-            <h2>Образование</h2>
-            <p>Образование, как ни странно, гуманитарное, имею диплом преподавателя истории. Позднее пришлось
-                перепрофилироваться на бухучет</p>
-        </div>
-        <div class="experience" id="experience">
-            <h2>Опыт работы</h2>
-            <p>Работаю больше 20v лет в вышеуказанной сфере в компаниях разной величины и продвинутости</p>
-        </div>
-        <div class="hobbies" id="hobbies">
-            <h2>Увлечения</h2>
-            <p>Много всего: из стандартного набора - путешествия, спорт, музыка-кино-книги-блабла. В последние годы,
-                конечно, - <span>программирование и IT</span> <img
-                    src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-medium/1f642.png"
-                    alt="smile">
-            </p>
-        </div>
-        <div class="my-IT-way" id="myWay">
-            <h2>Как я становился разработчиком</h2>
-            <p>Начал с самостоятельного обучения: полтора года изучал <em>HTML, CSS, JavaScript</em>. Постепенно
-                осознал, что
-                по-серьезному нужно <span>обучение со структурированной подачей материала, практикой и
-                    общением</span>, в
-                результате - записался на курс <a href="https://skillfactory.ru/" target="_blank"
-                    title="SkillFactory">SkillFactory</a></p>
-            <ul>
-                <li>20 декабря 2019 записался на курс <em>"Фронт-энд разработчик"</em></li>
-                <li>13 января 2020 приступил к изучению <em>НТML</em></li>
-                <li>20 января 2020 приступил к изучению <em>CSS</em></li>
-            </ul>
-        </div>
+
+        <aside class="left-side">
+            <div class="photo">
+                <img src="img/IMG_1645.JPG" alt="Моё фото">
+            </div>
+            <div class="contacts" id="contacts">
+                <h2>Контакты</h2>
+                <p><b>Телефон:</b>
+                    <img src="img/phone-24px.svg" alt="phone"><a href="tel:+71234567890">+7 (123) 456 78 90</a></p>
+                <p><b>Адрес:</b><img src="img/home_work-24px.svg" alt="address">Москва</p>
+                <p><b>E-mail:</b>
+                    <img src="img/email-24px.svg" alt="email">
+                    <a href="mailto:student@yahoo.com">student@yahoo.com</a>
+                </p>
+            </div>
+            <div>
+                <p class="social"><b>Соцсети:</b>
+                    <a href="http://www.facebook.com" target="_blank"><img src="img/fb.ico" alt="facebook"></a>
+                    <a href="http://www.instagram.com" target="_blank"><img src="img/inst.ico" alt="instagram"></a>
+                </p>
+            </div>
+        </aside>
+        <section>
+            <h1 class="student-name">Дмитрий Духовлинов, студент курса "Фронт-энд разработчик"</h1>
+            <div class="about" id="about">
+                <h2>Обо мне</h2>
+                <p>Живу в Москве, профессионально занимаюсь <span>бухгалтерией и финансами</span></p>
+            </div>
+            <div class="education" id="education">
+                <h2>Образование</h2>
+                <p>Образование, как ни странно, гуманитарное, имею диплом преподавателя истории. Позднее пришлось
+                    перепрофилироваться на бухучет</p>
+            </div>
+            <div class="experience" id="experience">
+                <h2>Опыт работы</h2>
+                <p>Работаю больше 20 лет в вышеуказанной сфере в компаниях разной величины и продвинутости</p>
+            </div>
+            <div class="hobbies" id="hobbies">
+                <h2>Увлечения</h2>
+                <p>Много всего: из стандартного набора - путешествия, спорт, музыка-кино-книги-блабла. В последние годы,
+                    конечно, - <span>программирование и IT</span> <img
+                        src="https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-medium/1f642.png"
+                        alt="smile">
+                </p>
+            </div>
+            <div class="my-IT-way" id="myWay">
+                <h2>Как я становился разработчиком</h2>
+                <p>Начал с самостоятельного обучения: полтора года изучал <em>HTML, CSS, JavaScript</em>. Постепенно
+                    осознал, что
+                    по-серьезному нужно <span>обучение со структурированной подачей материала, практикой и
+                        общением</span>, в
+                    результате - записался на курс <a href="https://skillfactory.ru/" target="_blank"
+                        title="SkillFactory">SkillFactory</a></p>
+                <ul>
+                    <li>20 декабря 2019 записался на курс <em>"Фронт-энд разработчик"</em></li>
+                    <li>13 января 2020 приступил к изучению <em>НТML</em></li>
+                    <li>20 января 2020 приступил к изучению <em>CSS</em></li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-
     <footer>
-        <div class="contacts" id="contacts">
-            <h2>Контакты</h2>
-            <p><b>Телефон:</b>&emsp;<a href="tel:+71234567890">+7 (123) 456 78 90</a></p>
-            <p><b>Адрес:&emsp;</b>Москва</p>
-            <p><b>E-mail:</b>&emsp;<a href="mailto:student@yahoo.com">student@yahoo.com</a></p>
-            <p><b>Соцсети:</b>&emsp;
-                <a href="http://www.facebook.com" target="_blank"><img src="img/fb.png" width="25" height="25"
-                        alt="facebook"></a>&#8194;
-                <a href="http://www.instagram.com" target="_blank"><img src="img/inst.png" width="25" height="25"
-                        alt="instagram"></a>
-            </p>
-        </div>
+        <hr>
         <div class="copyright">
             <p>
-                <a href="http://www.skillfactory.ru" target="_blank">Skillfactory.ru&copy;</a>
-                <b> • 2019</b>
+                <a href="http://www.skillfactory.ru" target="_blank"
+                    style="margin-right: 0px;">Skillfactory.ru&copy;</a>
+                <span><b>• 2019</b></span>
             </p>
         </div>
     </footer>
