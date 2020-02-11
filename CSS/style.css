@@ -8,11 +8,32 @@
    font-family: "RobotoSlab", serif;
 }
 
+@media screen and (max-width: 600px) {
+      .navigation,
+      .main {
+         display: flex;
+         flex-direction: column;
+      }
+      .photo img {
+         max-width: 100vw;
+      }
+      aside {
+         width: fit-content;
+         height: fit-content;
+      }
+      section {
+         width: fit-content;
+         height: fit-content;
+      }
+}
+
 body {
    margin: 0;
    padding: 0;
    font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
-   background-color: burlywood;
+   background-color:rgb(234, 211, 170);
+   background: url("../img/paper-1074131_640.png") no-repeat;
+   background-size: cover;
    display: flex;
    flex-direction: column;
 }
@@ -46,7 +67,7 @@ a:hover {
 h1,
 h2 {
    font-family: "RobotoSlab", serif;
-   color: gray;
+   color: rgb(75,75,75);
 }
 
 .contacts {
@@ -70,7 +91,6 @@ h2 {
    width: 40px;
    margin-right: 0;
    opacity: 1;
-   border-radius: 10px;
 }
 
 .photo img {
